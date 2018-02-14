@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AnnouncementViewController" customModule="BeaconDemo2" customModuleProvider="target">
+            <connections>
+                <outlet property="lblOfferDetail" destination="nHc-le-vuP" id="3AT-s5-Xvd"/>
+                <outlet property="lblOfferName" destination="icQ-sh-Mki" id="RaN-MA-CkZ"/>
+                <outlet property="offerImageView" destination="sAB-FF-kft" id="zsn-SU-IZ6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3im-yb-kdg">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tub-lH-KAu">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="789"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sAB-FF-kft">
+                                    <rect key="frame" x="8" y="8" width="359" height="375"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="375" id="EXf-8Z-YfV"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Offer Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="icQ-sh-Mki">
+                                    <rect key="frame" x="43" y="403" width="288" height="21"/>
+                                    <color key="backgroundColor" red="0.66666666669999997" green="0.13332727320000001" blue="0.2579060802" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="18"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" text="Offer Details" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nHc-le-vuP">
+                                    <rect key="frame" x="43" y="468" width="288" height="21"/>
+                                    <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="18"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" text="URL" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSb-Xi-XWz">
+                                    <rect key="frame" x="43" y="522" width="288" height="21"/>
+                                    <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="18"/>
+                                    <color key="textColor" red="0.1143245339" green="0.12890828479999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="iSb-Xi-XWz" firstAttribute="top" secondItem="nHc-le-vuP" secondAttribute="bottom" constant="33" id="4XX-Ls-6uG"/>
+                                <constraint firstAttribute="trailing" secondItem="sAB-FF-kft" secondAttribute="trailing" constant="8" id="5yo-s1-Ww9"/>
+                                <constraint firstAttribute="height" constant="789" id="8Ka-Uf-bee"/>
+                                <constraint firstItem="sAB-FF-kft" firstAttribute="top" secondItem="tub-lH-KAu" secondAttribute="top" constant="8" id="JlH-jr-Tyn"/>
+                                <constraint firstItem="icQ-sh-Mki" firstAttribute="centerX" secondItem="sAB-FF-kft" secondAttribute="centerX" id="NBh-7i-tGY"/>
+                                <constraint firstItem="icQ-sh-Mki" firstAttribute="width" secondItem="sAB-FF-kft" secondAttribute="width" multiplier="80%" id="RdH-FW-SzZ"/>
+                                <constraint firstItem="icQ-sh-Mki" firstAttribute="top" secondItem="sAB-FF-kft" secondAttribute="bottom" constant="20" id="UUi-IC-E3D"/>
+                                <constraint firstItem="iSb-Xi-XWz" firstAttribute="width" secondItem="nHc-le-vuP" secondAttribute="width" id="VHW-Ij-P41"/>
+                                <constraint firstItem="nHc-le-vuP" firstAttribute="centerX" secondItem="icQ-sh-Mki" secondAttribute="centerX" id="VmJ-vd-i8f"/>
+                                <constraint firstItem="iSb-Xi-XWz" firstAttribute="centerX" secondItem="nHc-le-vuP" secondAttribute="centerX" id="emZ-kV-m5Z"/>
+                                <constraint firstItem="sAB-FF-kft" firstAttribute="leading" secondItem="tub-lH-KAu" secondAttribute="leading" constant="8" id="hz7-CH-bFM"/>
+                                <constraint firstItem="nHc-le-vuP" firstAttribute="top" secondItem="icQ-sh-Mki" secondAttribute="bottom" constant="44" id="mtj-rg-vhM"/>
+                                <constraint firstItem="nHc-le-vuP" firstAttribute="width" secondItem="icQ-sh-Mki" secondAttribute="width" id="o6Z-EC-gU7"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="tub-lH-KAu" firstAttribute="centerX" secondItem="3im-yb-kdg" secondAttribute="centerX" id="Mz6-Sm-8gc"/>
+                        <constraint firstItem="tub-lH-KAu" firstAttribute="top" secondItem="3im-yb-kdg" secondAttribute="top" id="WUS-vT-tKT"/>
+                        <constraint firstAttribute="bottom" secondItem="tub-lH-KAu" secondAttribute="bottom" id="iDz-a4-8Bp"/>
+                        <constraint firstItem="tub-lH-KAu" firstAttribute="leading" secondItem="3im-yb-kdg" secondAttribute="leading" id="ixl-By-7Y1"/>
+                        <constraint firstAttribute="trailing" secondItem="tub-lH-KAu" secondAttribute="trailing" id="sGg-WX-m2i"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="3im-yb-kdg" secondAttribute="bottom" id="Js1-bq-Wi2"/>
+                <constraint firstItem="3im-yb-kdg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="M5Y-m7-uMT"/>
+                <constraint firstAttribute="trailing" secondItem="3im-yb-kdg" secondAttribute="trailing" id="Q1h-uK-jwF"/>
+                <constraint firstItem="3im-yb-kdg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Xht-bl-gTj"/>
+            </constraints>
+            <point key="canvasLocation" x="26.5" y="51.5"/>
+        </view>
+    </objects>
+</document>
