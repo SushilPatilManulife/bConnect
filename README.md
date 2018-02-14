@@ -1,6 +1,6 @@
 # bConnect
-iOS application for university 
-bConnect (Indoor Navigation and Library services for university using Beacons Technology)
+iOS application for university. 
+bConnect (Indoor Navigation and Library services for university using Beacons Technology).
 
 The Goal of this project is to develop a mobile application ‘bConnect’. This application is about Advertisements, Special offers, important announcements for commercial businesses, specific events and security alerts and advanced features such as tour, library services and indoor navigation. This application will be developed for iPhone users.
 
