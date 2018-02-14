@@ -1,10 +1,6 @@
 //
 //  AttendanceTableViewController.swift
 //  BeaconDemo2
-//
-//  Created by Ron Buencamino on 9/19/16.
-//  Copyright © 2016 Animatronic Gopher Inc. All rights reserved.
-//
 
 import UIKit
 
